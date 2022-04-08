@@ -1,13 +1,306 @@
+@import 'mdbreact/dist/css/mdb.css';
+@import "normalize.css";
+@import "sanitize.css";
+@import "normalize.css/opinionated.css";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hover:hover{
+ cursor: pointer;
+}
+.hover_opacity:hover{
+  cursor: pointer;
+  opacity: 0.4;
+}
+.hover_op:hover{
+  opacity: 0.6;
+  
+}
+.x{
+  animation-name: z;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+}
+@keyframes z {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.containerHome{
+  display: block;
+  height: 50rem;
+  margin-top: 1rem ;
+  margin-bottom: 1rem ;
+}
+
+.imgSize{
+  width: 25rem;
+  left:50%;
+  position: absolute;
+}
+.imgSize1{
+  width: 15rem;
+  right:50%;
+  position: absolute;
+  display: block;
+}
+.imgSize2{
+  width: 15rem;
+  left:62%;
+  top:17rem;
+  position: absolute;
+}
+.imgSize3{
+  width: 10rem;
+  display: block;
+  left: 50%;
+  top:17rem;
+  position: absolute;
+}
+.imgSize4{
+  width: 25rem;
+  right: 50%;
+  top:25rem;
+  position: absolute;
+}
+.logoHome{
+  position: absolute;
+  top: 5rem;
+  height: 15rem;
+  width: auto;
+}
+.logoHomeMini{
+  top:33rem;
+  left: 50%;
+}
+.navContainer{
+  top: 8rem;
+  position: absolute;
+}
+
+/* /////ECO///// */
+
+.quote{
+  width:47.5rem;
+}
+.ecoImg{
+  height:30rem;
+}
+.ecoSubTitle{
+  display: flex;
+  flex-direction: column;
+}
+.ecoSmallImg{
+  display: block;
+}
+
+/* /////ABOUT///// */
+.aboutContainer{
+  position: relative;
+}
+.aboutImg{
+
+}
+.firstP{
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+  position: absolute;
+  left:40%;
+  top: 10%;
+}
+.aboutImg1{
+  width: 30rem;
+}
+.middleRow{
+  margin-top: 3rem;
+}
+.aboutImg2{
+
+}
+.aboutHr{
+  width: 40rem;
+}
+.aboutEnd{
+  position: absolute;
+  justify-content: flex-end;
+  top: 90%;
+  margin-left: 3rem;
+}
+.lastP{
+  margin-left: 1.25rem;
+}
+
+/* /////PRODUCTS////// */
+.productContainer{
+  margin-left: 0.25rem;
+}
+.productImg{
+
+}
+.productImg1{
+  height: 25rem;;
+}
+.productImg2{
+  height: 15rem;
+}
+.miniLogoBox{
+  display: flex;
+}
+.mainBtn{
+  width: 10rem;
+}
+.productBtn{
+  background-color: rgba(245, 245, 220, 0.4);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+  .containerHome{display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; height: unset; margin-top: 6rem; margin-bottom: 8rem;}
+  .imgSize{width: 12rem;left:unset; position: relative;}
+  .imgSize1{ width: 6rem; right: unset;position: relative;}
+  .imgSize2{ width: 6rem;left: unset; top:unset; position: relative;}
+  .imgSize3{width: 7rem; display: none; position: relative;}
+  .imgSize4 { width: 12rem; right: unset; position: relative; top: unset;}
+  .aHome{order: 1;}
+  .aHome1{order:0;}
+  .aHome2{order:4;}
+  .aHome4{order:3;}
+  .logoHome{order:2; top:30%; height: 5rem; position: relative;}
+  .navContainer{order: 2; position: relative; top: unset; justify-content: center; margin-top: 1rem; margin-bottom: 1rem;}
+  .logoHomeMini{left: unset; top: 30rem;}
+  /* /////ECO///// */
+  .quote{ width: unset;}
+  .ecoImg{height: unset;}
+  .ecoSubTitle{display: none;}
+  .ecoSmallImg{display: flex; align-items: center;}
+  /* /////ABOUT////// */
+  .aboutContainer{justify-content: center;}
+  .aboutImg{width: 18rem; margin-bottom: 4rem;}
+  .aboutTitle{position: absolute;}
+  .firstP{margin-left: unset; margin-bottom: 0; position: relative; left: unset; top: unset;}
+  .aboutRow{justify-content: center;}
+  .middleRow{margin-top: 0;}
+  .aboutImg1{width: 18rem; }
+  .secondImg{order: 0;}
+  .secondP{order: 1;}
+  .aboutImg2{width: 18rem;}
+  .aboutEnd{position: relative; top: unset; justify-content: center; margin-left: 0;}
+  .aboutHr{width: 0;}
+  .lastP{margin-left: 0;}
+  /* ///PRODUCTS/// */
+  .productImg{height: 22rem;}
+  .productImg1{display: none;}
+  .productImg2{display: none;}
+  .miniLogo{display: none;}
+  .miniLogoBox{display: none;}
+  .collapseBox{position: absolute; z-index: 999; left: 100%;}
+  .mainBtn{width: 15rem;}
+  .productBtn{background-color: rgba(0, 0, 0, 0.5); color: white;}
+  .imgContainer{justify-content: center;}
+  .productContainer{margin: 0 0;}
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 991px){
+  .containerHome{margin-top: 5rem;}
+  .imgSize{width: 19rem;}
+  .imgSize1{width: 11rem;}
+  .imgSize2{width: 11rem; top: 13rem; left: 67%;}
+  .imgSize3{width: 5rem; top: 13rem; left:56% ;}
+  .imgSize4{width: 19rem; top: 24rem;  right: 32%;}
+  .logoHome{ height: 5rem; top: 18rem;}
+  .navCardContainer{flex-direction: column;}
+  .logoHomeMini{left: 29%; top: 18rem;}
+  /* /////ECO///// */
+  .quote{ width: unset;}
+  .ecoImg{height: unset;}
+  .ecoSmallImg{display: flex; align-items: center;}
+   /* /////ABOUT////// */
+   .aboutContainer{justify-content: center;}
+  .aboutImg{width: 18rem; margin-bottom: 4rem;}
+  .aboutTitle{position: absolute;}
+  .firstP{margin-left: unset; margin-bottom: 0; position: relative; left: unset; top: unset;}
+  .aboutRow{justify-content: center;}
+  .middleRow{margin-top: 0;}
+  .aboutImg1{width: 18rem; }
+  .secondImg{order: 0;}
+  .secondP{order: 1;}
+  .aboutImg2{width: 18rem;}
+  .aboutEnd{position: relative; top: unset; justify-content: center; margin-left: 0;}
+  .aboutHr{width: 0;}
+  .lastP{margin-left: 0;}
+  /* ///PRODUCTS/// */
+  .productImg{height: 31rem;}
+  .productImg1{height: 18rem;}
+  .productImg2{display: none; }
+  .miniLogo{display: none;}
+  .miniLogoBox{display: none;}
+  .mainBtn{width: 9rem;}
+  .productBtn{background-color: rgba(0, 0, 0, 0.5); color: white;}
+  .productContainer{margin: 0 0;}
+
+ 
+ 
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1024px){
+  .containerHome{margin-top: 5rem;}
+  .imgSize{width: 19rem;}
+  .imgSize1{width: 11rem;}
+  .imgSize2{width: 11rem; top: 13rem; left: 60%;}
+  .imgSize3{width: 5rem; top: 13rem; }
+  .imgSize4{width: 19rem; top: 22rem;right: 39%;}
+  .logoHome{ height: 5rem; top: 16rem;}
+  .navCardContainer{flex-direction: column;}
+  .logoHomeMini{left: 29%; top: 17rem;}
+  /* /////ECO///// */
+  .quote{ width: unset;}
+  .ecoImg{height: unset;}
+  .ecoSmallImg{display: flex; align-items: center;}
+   /* /////ABOUT////// */
+   /* ///PRODUCTS////// */
+  .productImg2{display: none; }
+  .miniLogo{display: none;}
+  .miniLogoBox{display: none;}
+  
+
+  
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px){
+  .containerHome{margin-top: 4rem;}
+  .imgSize{width: 22rem;}
+  .imgSize1{width: 13rem;}
+  .imgSize2{width: 13rem;top: 15rem; left: 65%; }
+  .imgSize3{width: 5rem; top: 17rem; left: 57%;}
+  .imgSize4{width: 22rem;top: 26rem; right: 34%; }
+  .logoHome{height: 6rem; top: 20rem; left: 10%;}
+  .navCardContainer{flex-direction: column; align-content: center;}
+  .logoHomeMini{left: 38%; top: 21rem;}
+  /* /////ECO///// */
+  .quote{ width: unset;}
+  .ecoImg{height: unset;}
+  .ecoSmallImg{display: flex; align-items: center;}
+   /* /////ABOUT////// */
+   .aboutImg2{width: 25rem;}
+   .aboutEnd{position: relative; top: unset; justify-content: center; margin-left: 0;}
+   .aboutHr{width: 0;}
+   .lastP{margin-left: 0;}
+   .firstP{left: 36%;}
+   /* /////PRODUCTS///// */
+   .miniLogo{display: none;}
+   .miniLogoBox{display: none;}
+
+ 
+}
+
+@media only screen and (min-width: 1200px) {
+  
 }
