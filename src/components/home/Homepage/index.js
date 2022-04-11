@@ -23,14 +23,16 @@ const HomePage = () => {
                         
                         d-flex 
                         align-items-center 
-                    
+                        flex-column
+                        justify-content-center
                         shadow-5
                         rounded-1
                         animate__animated animate__fadeIn
                         hover
                         logoHome"
                     style={{backgroundColor: 'rgba(245, 245, 220, 0.3)', color:'black'}}>
-                        <p className="fs-1 m-4 fw-bolder  text-nowrap" style={{fontFamily: 'Charm, cursive'}}>Minimal Design Ltd</p>
+                        <p className="fs-1 m-4 fw-bolder  text-nowrap mb-1" style={{fontFamily: 'Charm, cursive'}}>Minimal Design Ltd</p>
+                        <p className="mb-0 homeSubTitle fst-italic">start shopping</p>
                 </MDBCol> 
             }
                {nav && <HomeNavigation/> }

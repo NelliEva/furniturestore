@@ -160,17 +160,18 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .containerHome{display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; height: unset; margin-top: 6rem; margin-bottom: 8rem;}
-  .imgSize{width: 12rem;left:unset; position: relative;}
-  .imgSize1{ width: 6rem; right: unset;position: relative;}
-  .imgSize2{ width: 6rem;left: unset; top:unset; position: relative;}
+  .containerHome{display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-end; height: unset; margin-top: 3rem; margin-bottom: 8rem;}
+  .homeSubTitle{font-size: 0.7rem;}
+  .imgSize{width: 12rem;left:unset; position: relative;margin-bottom: 1rem;}
+  .imgSize1{ width: 6rem; right: unset;position: relative; margin-bottom: 1rem;}
+  .imgSize2{ width: 6rem;left: unset; top:unset; position: relative; margin-top: 1rem;}
   .imgSize3{width: 7rem; display: none; position: relative;}
   .imgSize4 { width: 12rem; right: unset; position: relative; top: unset;}
   .aHome{order: 1;}
   .aHome1{order:0;}
   .aHome2{order:4;}
   .aHome4{order:3;}
-  .logoHome{order:2; top:30%; height: 5rem; position: relative;}
+  .logoHome{order:2; top:30%; height: 7rem; position: relative;}
   .navContainer{order: 2; position: relative; top: unset; justify-content: center; margin-top: 1rem; margin-bottom: 1rem;}
   .logoHomeMini{left: unset; top: 30rem;}
   /* /////ECO///// */
@@ -209,12 +210,13 @@ body {
 
 @media only screen and (min-width: 769px) and (max-width: 991px){
   .containerHome{margin-top: 5rem;}
+  .homeSubTitle{font-size: 0.7rem;}
   .imgSize{width: 19rem;}
   .imgSize1{width: 11rem;}
   .imgSize2{width: 11rem; top: 13rem; left: 67%;}
   .imgSize3{width: 5rem; top: 13rem; left:56% ;}
   .imgSize4{width: 19rem; top: 24rem;  right: 32%;}
-  .logoHome{ height: 5rem; top: 18rem;}
+  .logoHome{ height: 7rem; top: 16.5rem;}
   .navCardContainer{flex-direction: column;}
   .logoHomeMini{left: 29%; top: 18rem;}
   /* /////ECO///// */
@@ -252,12 +254,13 @@ body {
 
 @media only screen and (min-width: 992px) and (max-width: 1024px){
   .containerHome{margin-top: 5rem;}
+  .homeSubTitle{font-size: 0.7rem;}
   .imgSize{width: 19rem;}
   .imgSize1{width: 11rem;}
   .imgSize2{width: 11rem; top: 13rem; left: 60%;}
   .imgSize3{width: 5rem; top: 13rem; }
-  .imgSize4{width: 19rem; top: 22rem;right: 39%;}
-  .logoHome{ height: 5rem; top: 16rem;}
+  .imgSize4{width: 19rem; top: 24rem;right: 39%;}
+  .logoHome{ height: 7rem; top: 16.5rem;}
   .navCardContainer{flex-direction: column;}
   .logoHomeMini{left: 29%; top: 17rem;}
   /* /////ECO///// */
@@ -276,12 +279,13 @@ body {
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px){
   .containerHome{margin-top: 4rem;}
+  .homeSubTitle{font-size: 0.7rem;}
   .imgSize{width: 22rem;}
   .imgSize1{width: 13rem;}
   .imgSize2{width: 13rem;top: 15rem; left: 65%; }
-  .imgSize3{width: 5rem; top: 17rem; left: 57%;}
-  .imgSize4{width: 22rem;top: 26rem; right: 34%; }
-  .logoHome{height: 6rem; top: 20rem; left: 10%;}
+  .imgSize3{width: 7rem; top: 15rem; left: 54%;}
+  .imgSize4{width: 22rem;top: 28rem; right: 34%; }
+  .logoHome{height: 7rem; top: 20rem; left: 10%;}
   .navCardContainer{flex-direction: column; align-content: center;}
   .logoHomeMini{left: 38%; top: 21rem;}
   /* /////ECO///// */
